@@ -14,6 +14,7 @@ public class DBConnection {
     private static final String url = "jdbc:mysql://localhost:3306/jooq-test";
 
     public static DSLContext createDSL() throws Exception {
+        // test
         Connection conn = null;
         Class.forName("com.mysql.jdbc.Driver").newInstance();
         conn = DriverManager.getConnection(url, userName, password);
